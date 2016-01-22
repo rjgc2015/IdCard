@@ -11,6 +11,7 @@ import java.io.Reader;
 import java.util.ArrayList;
 import java.util.List;
 
+import android.R.integer;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Context;
@@ -99,9 +100,10 @@ OnSlideListener,OnTouchListener {
 	}
 	 private void initView() {
 	        mListView = (ListViewCompat) findViewById(R.id.list);
-
+	        String a[] = new String[2];
 	        for (int i = 0; i < 1; i++) {
-	            MessageItem item = new MessageItem();
+	//读取文件信息
+	        	MessageItem item = new MessageItem();
 	            StringBuffer buffer = new StringBuffer();
 				try {
 					FileInputStream fis = new FileInputStream(
@@ -110,16 +112,25 @@ OnSlideListener,OnTouchListener {
 					// Unicode,UTF-8,ASCII,GB2312,Big5
 					Reader in = new BufferedReader(isr);
 					int ch;
+					int k=0;
+					
 					while ((ch = in.read()) > -1) {
 						buffer.append((char) ch);
+						if ((char) ch=='\n') {
+							a[k]=buffer.substring(0, buffer.length()-1);
+							buffer.delete(0, buffer.length());
+							k++;
+						}
 					}
 					in.close();
 //					textView.setText(buffer.toString());
 				} catch (IOException e) {
 //					textView.setText("文件不存在!");
 				}
-//	                item.iconRes = R.drawable.default_qq_avatar;
-//	                item.msg = "青岛爆炸满月：大量鱼虾死亡";
+//item的填充
+	                item.iconRes = R.drawable.default_qq_avatar;
+	                item.title = a[0];
+	                item.msg = a[1];
 	               
 	            
 	            mMessageItems.add(item);
