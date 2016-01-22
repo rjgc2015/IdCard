@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e5e5e5"
+    android:orientation="vertical" >
+         <LinearLayout  
+   		    android:layout_width="match_parent"
+       		android:layout_height="40dp"
+       		android:background="#00a1e9">
+       		<Button
+       	    android:id="@+id/store_return"
+       	    android:layout_width="wrap_content"
+       	    android:layout_height="35dp"
+       	    android:layout_marginLeft="5dp"
+       	    android:layout_marginTop="3dp"
+       	    android:text="@string/_return"
+       	    android:background="#00FFFFFF"
+       	    android:textColor="#FFFFFF"
+       	    android:textSize="20sp" />
+       		<TextView
+	    	android:id="@+id/card_store"
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:layout_gravity="center"
+	    	android:layout_marginLeft="50dp"
+	    	android:text="@string/card_store"
+	    	android:textColor="#FFFFFF"
+	    	android:textSize="20sp" />
+       		</LinearLayout >
+       		<LinearLayout 
+   		    android:layout_width="match_parent"
+       		android:layout_height="35dp"
+       		android:background="@drawable/changkuang"
+       		android:orientation="horizontal">
+       		<Button
+       		    android:id="@+id/using"
+       		    android:layout_width="0dp"
+       		    android:layout_height="35dp"
+       		    android:layout_weight="1"
+       		    android:background="#00FFFFFF"
+       		    android:text="@string/using"
+       		    android:textColor="#000000"
+       		    android:textSize="20sp" />
+			<Button
+       		    android:id="@+id/character"
+       		    android:layout_width="0dp"
+       		    android:layout_height="35dp"
+       		    android:layout_weight="1"
+       		    android:background="#00FFFFFF"
+       		    android:text="@string/character"
+       		    android:textColor="#000000"
+       		    android:textSize="20sp" />
+			</LinearLayout >
+			  <LinearLayout 
+   		    android:layout_width="match_parent"
+       		android:layout_height="40dp"
+       		android:layout_marginTop="20dp"
+       		android:background="#FFFFFF"
+       		android:orientation="horizontal">
+			<TextView
+	    		android:id="@+id/residue"
+	    		android:layout_width="0dp"
+	    		android:layout_height="40dp"
+	    		android:layout_weight="1.0"
+	    		android:gravity="center"
+	    		android:text="@string/residue_card"
+	    		android:textColor="#000000"
+	    		android:textSize="20sp" />
+			<TextView
+	    		android:id="@+id/residue_card_number"
+	    		android:layout_width="0dp"
+	    		android:layout_height="40dp"
+	    		android:layout_weight="1.0"
+	    		android:text="@string/number"
+	    		android:textColor="#000000"
+	    		android:textSize="20sp" />
+			</LinearLayout>
+			 <LinearLayout 
+   		    android:layout_width="match_parent"
+       		android:layout_height="40dp"
+       		android:background="#FFFFFF"
+       		android:orientation="horizontal">
+			<TextView
+	    		android:id="@+id/send_card"
+	    		android:layout_width="0dp"
+	    		android:layout_height="40dp"
+	    		android:layout_weight="1.0"
+	    		android:gravity="center"
+	    		android:text="@string/send_card"
+	    		android:textColor="#000000"
+	    		android:textSize="20sp" />
+			<TextView
+	    		android:id="@+id/send_card_number"
+	    		android:layout_width="0dp"
+	    		android:layout_height="40dp"
+	    		android:layout_weight="1.0"
+	    		android:text="@string/number"
+	    		android:textColor="#000000"
+	    		android:textSize="20sp" />
+			</LinearLayout>
+			 <LinearLayout 
+   		    android:layout_width="match_parent"
+       		android:layout_height="40dp"
+       		android:background="#FFFFFF"
+       		android:orientation="horizontal">
+			<TextView
+	    		android:id="@+id/receive_card"
+	    		android:layout_width="0dp"
+	    		android:layout_height="40dp"
+	    		android:layout_weight="1.0"
+	    		android:gravity="center"
+	    		android:text="@string/receive_card"
+	    		android:textColor="#000000"
+	    		android:textSize="20sp" />
+			<TextView
+	    		android:id="@+id/receive_card_number"
+	    		android:layout_width="0dp"
+	    		android:layout_height="40dp"
+	    		android:layout_weight="1.0"
+	    		android:text="@string/number"
+	    		android:textColor="#000000"
+	    		android:textSize="20sp" />
+			</LinearLayout>
+			<Button
+			    android:layout_width="120dp"
+			    android:layout_height="40dp"
+			    android:layout_marginTop="30dp"
+			    android:layout_gravity="center"
+			    android:background="@drawable/rectangle4"
+			    android:text="@string/purchase_card"
+			    android:textColor="#FFFFFF"
+			    android:textSize="20sp"/>
+</LinearLayout>
+

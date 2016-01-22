@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+   android:background="@drawable/forget_password"
+    android:layout_height="match_parent" >
+    <Button
+        android:id="@+id/company_logo"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="57dp"
+        android:background="@drawable/circle"
+        android:text="logo" />
+    <TextView
+        android:id="@+id/my_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/company_logo"
+        android:layout_marginRight="64dp"
+        android:layout_marginTop="16dp"
+        android:textSize="22sp"
+        android:text="名字" />
+
+    <TextView
+        android:id="@+id/my_post"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/company_logo"
+        android:layout_alignLeft="@+id/my_name"
+        android:textSize="22sp"
+        android:text="职位" />
+
+    <EditText
+        android:id="@+id/input_mailbox"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignBaseline="@+id/mailbox"
+        android:layout_alignBottom="@+id/mailbox"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/rectangle5"
+        android:ems="10" />
+
+    <Button
+        android:id="@+id/contact_way"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignLeft="@+id/mailbox"
+        android:layout_below="@+id/input_mailbox"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/phone"/>
+
+   <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignTop="@+id/contact_way"
+        android:layout_toRightOf="@+id/contact_way"
+        android:background="@drawable/rectangle5"
+        android:ems="10" />
+
+    <Button
+        android:id="@+id/mailbox"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/company_name"
+        android:layout_marginTop="66dp"
+        android:layout_toLeftOf="@+id/input_mailbox"
+        android:background="@drawable/mail"
+        android:textSize="22sp" />
+
+    <Button
+        android:id="@+id/address"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_above="@+id/input_mailbox"
+        android:layout_alignLeft="@+id/mailbox"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/address" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignTop="@+id/address"
+        android:layout_toRightOf="@+id/address"
+        android:background="@drawable/rectangle5"
+        android:ems="10" />
+
+<EditText
+    android:id="@+id/editText_fax"
+    android:layout_width="wrap_content"
+    android:layout_height="30dp"
+    android:layout_alignParentRight="true"
+    android:layout_below="@+id/editText1"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/rectangle5"
+    android:ems="10" >
+
+    <requestFocus />
+</EditText>
+
+<Button
+    android:id="@+id/fax"
+    android:layout_width="30dp"
+    android:layout_height="30dp"
+    android:layout_alignLeft="@+id/contact_way"
+    android:layout_alignTop="@+id/editText_fax"
+    android:background="@drawable/fax"
+    android:textSize="22sp" />
+
+<TextView
+    android:id="@+id/company_name"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignLeft="@+id/company_logo"
+    android:layout_below="@+id/company_logo"
+    android:layout_marginLeft="15dp"
+    android:layout_marginTop="20dp"
+    android:text="@string/contact"
+    android:textSize="22sp" />
+
+<Button
+    android:id="@+id/change"
+    android:layout_width="100dp"
+    android:layout_height="45dp"
+    android:layout_alignParentBottom="true"
+    android:layout_marginBottom="19dp"
+    android:layout_toRightOf="@+id/company_logo"
+    android:background="@drawable/rectangle4"
+    android:text="@string/change"
+    android:textColor="#FFFFFF"
+    android:textSize="20sp" />
+
+<TextView
+    android:id="@+id/mycard"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignBaseline="@+id/card_return"
+    android:layout_alignBottom="@+id/card_return"
+    android:layout_centerHorizontal="true"
+    android:text="@string/mycard"
+    android:textColor="#FFFFFF"
+    android:textSize="20sp" />
+
+<Button
+    android:id="@+id/card_return"
+    android:layout_width="wrap_content"
+    android:layout_height="35dp"
+    android:layout_alignParentTop="true"
+    android:layout_toLeftOf="@+id/address"
+    android:background="#00FFFFFF"
+    android:text="@string/_return"
+    android:textColor="#FFFFFF"
+    android:textSize="20sp" />
+
+<Button
+    android:id="@+id/button_send"
+    android:layout_width="wrap_content"
+    android:layout_height="35dp"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentTop="true"
+    android:background="#00FFFFFF"
+    android:text="@string/send"
+    android:textColor="#FFFFFF"
+    android:textSize="20sp" />
+
+</RelativeLayout>

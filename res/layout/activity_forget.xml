@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/forget_password">
+    <Button
+        android:id="@+id/forget_back"
+        android:layout_width="wrap_content"
+       	android:layout_height="35dp"
+       	android:layout_marginLeft="5dp"
+       	android:layout_marginTop="3dp"
+       	android:text="@string/_return"
+       	android:background="#00FFFFFF"
+       	android:textColor="#FFFFFF"
+       	android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/forget_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/forget_back"
+        android:layout_alignBottom="@+id/forget_back"
+        android:layout_centerHorizontal="true"
+        android:text="@string/forget_pwd"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/forget_back"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:textSize="16sp"
+        android:text="请在一分钟之内输入手机收到的验证码" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="180dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        android:background="@drawable/rectangle5" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="60秒后重发" />
+
+</RelativeLayout>

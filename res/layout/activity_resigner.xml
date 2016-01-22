@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/forget_password"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/resigner_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#00FFFFFF"
+        android:text="@string/_return"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/editpassword"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:layout_above="@+id/editmakesure"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="31dp"
+        android:background="@drawable/rectangle"
+        android:ems="10"
+        android:hint="请输入您的密码" />
+
+    <EditText
+        android:id="@+id/editphonenumber"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:layout_above="@+id/editpassword"
+        android:layout_alignLeft="@+id/editpassword"
+        android:layout_marginBottom="28dp"
+        android:background="@drawable/rectangle"
+        android:ems="10"
+        android:hint="请输入您的手机号码" />
+
+    <EditText
+        android:id="@+id/editmakesure"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:layout_above="@+id/makesure"
+        android:layout_alignLeft="@+id/editpassword"
+        android:layout_marginBottom="26dp"
+        android:background="@drawable/rectangle"
+        android:ems="10"
+        android:hint="请再次输入您的密码" />
+
+    <Button
+        android:id="@+id/makesure"
+        android:layout_width="150dp"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="28dp"
+        android:background="@drawable/rectangle2"
+        android:text="@string/confirm" />
+
+    <ImageButton
+        android:id="@+id/checkphoto"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_below="@+id/resigner_back"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/circle"
+        android:src="@drawable/camera" />
+
+    <TextView
+        android:id="@+id/register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/resigner_back"
+        android:layout_alignBottom="@+id/resigner_back"
+        android:layout_centerHorizontal="true"
+        android:text="@string/register"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+</RelativeLayout>

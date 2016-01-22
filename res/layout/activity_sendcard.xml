@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e5e5e5"
+    android:orientation="vertical" >
+ <RelativeLayout  
+   		    android:layout_width="match_parent"
+       		android:layout_height="40dp"
+       		android:background="#00a1e9">
+    <Button
+        	android:id="@+id/key_back"
+       	 	android:layout_width="wrap_content"
+       	    android:layout_height="35dp"
+       	    android:layout_marginLeft="5dp"
+       	    android:layout_marginTop="3dp"
+       	    android:text="@string/_return"
+       	    android:background="#00FFFFFF"
+       	    android:textColor="#FFFFFF"
+       	    android:textSize="20sp" />
+
+	<TextView
+	    android:id="@+id/setting"
+	    android:layout_width="50dp"
+	    android:layout_height="30dp"
+	    android:layout_alignBaseline="@+id/key_back"
+	    android:layout_alignBottom="@+id/key_back"
+	    android:layout_alignParentRight="true"
+	    android:text="@string/all_send"
+	    android:textColor="#FFFFFF"
+	    android:textSize="20sp" />
+
+	<TextView
+	    android:id="@+id/friend_card"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBaseline="@+id/key_back"
+	    android:layout_alignBottom="@+id/key_back"
+	    android:layout_centerHorizontal="true"
+	    android:text="@string/key_send_card"
+	    android:textColor="#FFFFFF"
+	    android:textSize="20sp" />
+	
+</RelativeLayout>
+	<RelativeLayout 
+		android:background="@drawable/long_frame" 
+		android:layout_height="35dp" 
+		android:layout_marginTop="5dp"
+		android:layout_width="match_parent">
+	<Button 
+    	android:background="@drawable/searching" 
+    	android:layout_height="30dp" 
+    	android:layout_width="30dp" 
+    	android:id="@+id/searching"/>
+	<EditText 
+		android:background="@drawable/rectangle3" 
+		android:layout_height="30dp" 
+		android:layout_width="285dp" 
+		android:id="@+id/searching_input" 
+		android:hint="请输入好友名称" 
+		android:ems="15" 
+		android:layout_alignParentRight="true" 
+		android:layout_alignParentBottom="true">
+	<requestFocus/>
+	</EditText>
+</RelativeLayout>
+<RelativeLayout 
+   		    android:layout_width="match_parent"
+       		android:layout_height="90dp"
+       		android:layout_marginTop="5dp"
+       		android:background="#FFFFFF">
+       		<ImageButton
+       		    android:id="@+id/head_photo"
+       		    android:layout_width="60dp"
+       		    android:layout_height="60dp"
+       		    android:layout_alignParentLeft="true"
+       		    android:layout_marginLeft="5dp"
+       		    android:layout_centerVertical="true"
+       		    android:background="@drawable/circle" />
+
+			<TextView
+			    android:id="@+id/user_name"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_alignTop="@+id/head_photo"
+			    android:layout_marginLeft="62dp"
+			    android:layout_marginTop="14dp"
+			    android:layout_toRightOf="@+id/head_photo"
+			    android:text="@string/user_name"
+			    android:textSize="20sp" />
+			<TextView
+			    android:id="@+id/Company_Name"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_below="@+id/user_name"
+			    android:layout_toRightOf="@+id/head_photo"
+			    android:text="福建闽侯大学诚上街65%"
+			    android:textSize="20sp" />
+     </RelativeLayout>
+</LinearLayout>

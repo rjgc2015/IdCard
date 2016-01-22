@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/forget_password"
+    android:orientation="vertical" >
+    <RelativeLayout 
+   		    android:layout_width="match_parent"
+       		android:layout_height="match_parent"
+       		android:background="@drawable/forget_password">
+	<Button
+       	    android:id="@+id/company_back"
+       	    android:layout_width="wrap_content"
+       	    android:layout_height="35dp"
+       	    android:layout_marginLeft="5dp"
+       	    android:layout_marginTop="3dp"
+       	    android:text="@string/_return"
+       	    android:background="#00FFFFFF"
+       	    android:textColor="#FFFFFF"
+       	    android:textSize="20sp" />
+<TextView
+        android:id="@+id/company_resume"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/company_back"
+        android:layout_alignBottom="@+id/company_back"
+        android:layout_centerHorizontal="true"
+        android:text="@string/company_resume"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+<Button
+    android:id="@+id/editText1"
+    android:layout_width="80dp"
+    android:layout_height="80dp"
+    android:layout_alignLeft="@+id/company_resume"
+    android:layout_below="@+id/company_back"
+    android:layout_marginTop="33dp"
+    android:background="@drawable/rectangle5" />
+
+<TextView
+    android:id="@+id/text_resume"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/editText1"
+    android:layout_marginTop="42dp"
+    android:layout_toRightOf="@+id/company_back"
+    android:textSize="20sp"
+    android:text="@string/text_resume" />
+
+<TextView
+    android:id="@+id/textView1"
+     android:layout_width="180dp"
+    android:layout_height="60dp"
+    android:layout_alignLeft="@+id/text_resume"
+    android:layout_below="@+id/text_resume"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/rectangle5"
+    android:hint="请控制在12字以内"
+    android:textSize="20sp" />
+
+<TextView
+    android:id="@+id/textView2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignLeft="@+id/textView1"
+    android:layout_below="@+id/textView1"
+    android:layout_marginTop="25dp"
+    android:text="公司地址：" 
+    android:textSize="20sp" />
+
+<TextView
+    android:id="@+id/textView3"
+    android:layout_width="180dp"
+    android:layout_height="30dp"
+    android:layout_alignLeft="@+id/textView2"
+    android:layout_below="@+id/textView2"
+    android:background="@drawable/rectangle5"
+    android:layout_marginTop="10dp"
+    android:textSize="20sp" />
+
+</RelativeLayout>
+</LinearLayout>

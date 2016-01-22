@@ -1,0 +1,57 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/forget_password"
+    android:orientation="vertical" >
+    <RelativeLayout 
+   		    android:layout_width="match_parent"
+       		android:layout_height="match_parent"
+       		android:background="@drawable/forget_password">
+	<Button
+       	    android:id="@+id/manage_back"
+       	    android:layout_width="wrap_content"
+       	    android:layout_height="35dp"
+       	    android:layout_marginLeft="5dp"
+       	    android:layout_marginTop="3dp"
+       	    android:text="@string/_return"
+       	    android:background="#00FFFFFF"
+       	    android:textColor="#FFFFFF"
+       	    android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/changepassword"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/manage_back"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="116dp"
+        android:background="@drawable/rectangle4"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:text="@string/alter_password" />
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/changepassword"
+        android:layout_below="@+id/changepassword"
+        android:layout_marginTop="51dp"
+        android:background="@drawable/rectangle4"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:text="@string/quit_login" />
+
+    <TextView
+        android:id="@+id/account_manage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/manage_back"
+        android:layout_alignBottom="@+id/manage_back"
+        android:layout_centerHorizontal="true"
+        android:text="@string/account_manage"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+</RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+     <RelativeLayout 
+   		    android:layout_width="match_parent"
+       		android:layout_height="match_parent"
+       		android:background="@drawable/forget_password">
+       		<Button
+       	    android:id="@+id/model_return"
+       	    android:layout_width="wrap_content"
+       	    android:layout_height="35dp"
+       	    android:layout_marginLeft="5dp"
+       	    android:layout_marginTop="3dp"
+       	    android:text="@string/_return"
+       	    android:background="#00FFFFFF"
+       	    android:textColor="#FFFFFF"
+       	    android:textSize="20sp" />
+
+       		<TextView
+       		    android:id="@+id/mymodel"
+       		    android:layout_width="wrap_content"
+       		    android:layout_height="wrap_content"
+       		    android:layout_alignBaseline="@+id/model_return"
+       		    android:layout_alignBottom="@+id/model_return"
+       		    android:layout_centerHorizontal="true"
+       		    android:text="@string/mymodel"
+       		    android:textColor="#FFFFFF"
+       		    android:textSize="20sp" />
+
+       		<Button
+       		    android:id="@+id/model"
+       		    android:layout_width="260dp"
+       		    android:layout_height="120dp"
+       		    android:layout_below="@+id/model_return"
+       		    android:layout_centerHorizontal="true"
+       		    android:layout_marginTop="27dp"
+       		    android:background="#89000000" />
+
+       		<TextView
+       		    android:id="@+id/textView1"
+       		    android:layout_width="wrap_content"
+       		    android:layout_height="wrap_content"
+       		    android:layout_alignLeft="@+id/model"
+       		    android:layout_below="@+id/model"
+       		    android:layout_marginTop="10dp"
+       		    android:textSize="16sp"
+       		    android:text="小清新" />
+
+			<Button
+			    android:id="@+id/change_model"
+			    android:layout_width="60dp"
+			    android:layout_height="25dp"
+			    android:layout_alignRight="@+id/model"
+			    android:layout_alignTop="@+id/textView1"
+			    android:background="@drawable/rectangle4"
+			    android:text="@string/change_model"
+			    android:textColor="#FFFFFF"
+			    android:textSize="12sp" />
+</RelativeLayout>
+</LinearLayout>

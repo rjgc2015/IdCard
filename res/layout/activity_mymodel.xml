@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e5e5e5"
+    android:orientation="vertical" >
+         <LinearLayout  
+   		    android:layout_width="match_parent"
+       		android:layout_height="40dp"
+       		android:background="#00a1e9">
+       		<Button
+       	    android:id="@+id/store_return"
+       	    android:layout_width="wrap_content"
+       	    android:layout_height="35dp"
+       	    android:layout_marginLeft="5dp"
+       	    android:layout_marginTop="3dp"
+       	    android:text="@string/_return"
+       	    android:background="#00FFFFFF"
+       	    android:textColor="#FFFFFF"
+       	    android:textSize="20sp" />
+       		<TextView
+	    	android:id="@+id/card_store"
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:layout_gravity="center"
+	    	android:layout_marginLeft="50dp"
+	    	android:text="@string/card_store"
+	    	android:textColor="#FFFFFF"
+	    	android:textSize="20sp" />
+       		</LinearLayout >
+       		<LinearLayout 
+   		    android:layout_width="match_parent"
+       		android:layout_height="35dp"
+       		android:background="@drawable/changkuang1"
+       		android:orientation="horizontal">
+       		<Button
+       		    android:id="@+id/using"
+       		    android:layout_width="0dp"
+       		    android:layout_height="35dp"
+       		    android:layout_weight="1"
+       		    android:background="#00FFFFFF"
+       		    android:text="@string/using"
+       		    android:textColor="#000000"
+       		    android:textSize="20sp" />
+			<Button
+       		    android:id="@+id/character"
+       		    android:layout_width="0dp"
+       		    android:layout_height="35dp"
+       		    android:layout_weight="1"
+       		    android:background="#00FFFFFF"
+       		    android:text="@string/character"
+       		    android:textColor="#000000"
+       		    android:textSize="20sp" />
+			</LinearLayout >
+			  <LinearLayout 
+   		    android:layout_width="match_parent"
+       		android:layout_height="40dp"
+       		android:layout_marginTop="10dp"
+       		android:background="#FFFFFF"
+       		android:orientation="horizontal">
+			<TextView
+	    		android:id="@+id/mymodel"
+	    		android:layout_width="0dp"
+	    		android:layout_height="40dp"
+	    		android:layout_weight="1.0"
+	    		android:gravity="center"
+	    		android:text="@string/mymodel"
+	    		android:textColor="#000000"
+	    		android:textSize="20sp" />
+			<TextView
+	    		android:id="@+id/residue_card_number"
+	    		android:layout_width="0dp"
+	    		android:layout_height="40dp"
+	    		android:layout_weight="1.0"
+	    		 />
+			</LinearLayout>
+			  <LinearLayout
+			      android:layout_width="match_parent"
+			      android:layout_height="40dp"
+			      android:layout_marginTop="10dp"
+			      android:background="#FFFFFF"
+			      android:orientation="horizontal" >
+			      <TextView
+			          android:id="@+id/modelstore"
+			          android:layout_width="0dp"
+			          android:layout_height="40dp"
+			          android:layout_weight="1.0"
+			          android:gravity="center"
+			          android:text="@string/modelstore"
+			          android:textColor="#000000"
+			          android:textSize="20sp" />
+			      <TextView
+			          android:id="@+id/send_card_number"
+			          android:layout_width="0dp"
+			          android:layout_height="40dp"
+			          android:layout_weight="1.0" />
+			  </LinearLayout>
+			    <RelativeLayout 
+   		    android:layout_width="match_parent"
+       		android:layout_height="match_parent"
+       		>
+
+			  <Button
+			      android:id="@+id/model"
+			      android:layout_width="140dp"
+			      android:layout_height="60dp"
+			      android:layout_alignParentLeft="true"
+			      android:layout_alignParentTop="true"
+			      android:layout_marginLeft="23dp"
+			      android:layout_marginTop="20dp"
+			      android:background="#89000000" />
+
+			  <Button
+			      android:id="@+id/download_model"
+			      android:layout_width="60dp"
+			      android:layout_height="25dp"
+			      android:layout_alignLeft="@+id/model"
+			      android:layout_below="@+id/model"
+			      android:layout_marginLeft="36dp"
+			      android:layout_marginTop="16dp"
+			      android:background="@drawable/rectangle4"
+			      android:text="@string/download_model"
+			      android:textColor="#FFFFFF"
+			      android:textSize="12sp" />
+
+			  <TextView
+			      android:id="@+id/textView1"
+			      android:layout_width="wrap_content"
+			      android:layout_height="wrap_content"
+			      android:layout_alignLeft="@+id/model"
+			      android:layout_below="@+id/model"
+			      android:text="小清新 0.8M" />
+
+			  </RelativeLayout>
+</LinearLayout>
+
