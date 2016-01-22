@@ -118,8 +118,8 @@ OnSlideListener,OnTouchListener {
 				} catch (IOException e) {
 //					textView.setText("文件不存在!");
 				}
-	                item.iconRes = R.drawable.default_qq_avatar;
-	                item.msg = "青岛爆炸满月：大量鱼虾死亡";
+//	                item.iconRes = R.drawable.default_qq_avatar;
+//	                item.msg = "青岛爆炸满月：大量鱼虾死亡";
 	               
 	            
 	            mMessageItems.add(item);
